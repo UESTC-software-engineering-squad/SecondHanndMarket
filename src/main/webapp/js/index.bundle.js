@@ -36732,11 +36732,11 @@
 	    //不同页的瀑布流不一样
 	    //闲置数码 - digital
 	    //校园代步 - ride
-	    //电器日用 - commodity
+	    //日用家居 - commodity
 	    //图书教材 - book
-	    //美妆衣物 - makeup
-	    //运动棋牌 - sport
-	    //票券小物 - smallthing
+	    //衣物服饰 - makeup
+	    //运动户外 - sport
+	    //其他 - smallthing
 	    var category;
 	    var isKeyword = false;
 	    switch (window.location.pathname) {
@@ -36747,19 +36747,19 @@
 	            category = '校园代步'
 	            break;
 	        case '/category/commodity':
-	            category = '电器日用'
+	            category = '日用家居'
 	            break;
 	        case '/category/book':
 	            category = '图书教材'
 	            break;
 	        case '/category/makeup':
-	            category = '美妆衣物'
+	            category = '衣物服饰'
 	            break;
 	        case '/category/sport':
-	            category = '运动棋牌'
+	            category = '运动户外'
 	            break;
 	        case '/category/smallthing':
-	            category = '票券小物'
+	            category = '其他'
 	            break;
 	        case '/category/all':
 	            category = 'all'

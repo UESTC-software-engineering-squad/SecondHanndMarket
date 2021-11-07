@@ -1,6 +1,7 @@
 package com.shm.service;
 
 import java.util.List;
+
 import com.shm.pojo.User;
 
 public interface UserService {
