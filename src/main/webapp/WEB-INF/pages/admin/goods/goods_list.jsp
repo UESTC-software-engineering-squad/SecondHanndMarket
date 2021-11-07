@@ -111,19 +111,19 @@ table td{
 							<span>校园代步 </span>
 							</c:if>
 							<c:if test="${item.catelogId == 3}">  
-							<span> 电器日用  </span>
+							<span> 日用家居  </span>
 							</c:if>
 							<c:if test="${item.catelogId == 4}">  
 							<span> 图书教材  </span>
 							</c:if>
 							<c:if test="${item.catelogId == 5}">  
-							<span>美妆衣物 </span>
+							<span>衣物服饰 </span>
 							</c:if>
 							<c:if test="${item.catelogId == 6}">  
-							<span> 运动棋牌</span>
+							<span> 运动户外</span>
 							</c:if>
 							<c:if test="${item.catelogId == 7}">  
-							<span> 票券小物</span>
+							<span> 其他</span>
 							</c:if>
 							</td>
 							<td>￥${item.realPrice}</td>

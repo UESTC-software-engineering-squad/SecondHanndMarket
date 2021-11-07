@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>猿来入此校园二手市场</title>
+    <title>电子科大校园二手市场</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/index.css" />
     <script type="text/javascript" src="<%=basePath%>js/jquery.js" ></script>
@@ -72,7 +72,7 @@
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">猿来入此</em>
+                <em class="em1">电子科大</em>
                 <em class="em2">校园二手市场</em>
                 <em class="em3"></em>
             </a>
@@ -264,13 +264,13 @@
         <h1 class="item-name">${goodsExtend.goods.name}</h1>
         <h2 class="item-price">${goodsExtend.goods.price}</h2>
         <h2 class="publisher-info-title">原价：<span style="text-decoration:line-through;">${goodsExtend.goods.realPrice}</span></h2>
-        <div class="item-public-info">
-            <p class="bargain">可讲价</p>
-            <p>
-                <i class="iconfont"></i>
-                <em class="item-location">东华大学</em>
-            </p>
-        </div>
+<%--        <div class="item-public-info">--%>
+<%--            <p class="bargain">可讲价</p>--%>
+<%--            <p>--%>
+<%--                <i class="iconfont"></i>--%>
+<%--                <em class="item-location">电子科大</em>--%>
+<%--            </p>--%>
+<%--        </div>--%>
         <div class="publisher-info-title">
             <em>卖家信息</em><hr>
         </div>
@@ -332,9 +332,9 @@
     <hr class="hr2" />
     <p class="section">描述：${goodsExtend.goods.describle}</p>
     <p class="section"></p>
-    <p class="section">
-        联系我的时候，请说明是在“猿来入此校园二手市场”上看见的哦~
-    </p>
+<%--    <p class="section">--%>
+<%--        联系我的时候，请说明是在“电子科大校园二手市场”上看见的哦~--%>
+<%--    </p>--%>
 </div>
 <div class="row detail-area">
     <div class="clo s12">

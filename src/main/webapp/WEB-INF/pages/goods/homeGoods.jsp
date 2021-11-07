@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>【猿来入此】校园校园二手市场</title>
+    <title>【电子科大】校园校园二手市场</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/index.css" />
     <script type="text/javascript" src="<%=basePath%>js/jquery.js" ></script>
@@ -117,7 +117,7 @@
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">猿来入此</em>
+                <em class="em1">电子科大</em>
                 <em class="em2">校园二手市场</em>
                 <em class="em3"></em>
             </a>
@@ -309,7 +309,7 @@
     <li ng-class="{true: 'active'}[isCommodity]">
         <a href="<%=basePath%>goods/catelog/3" class="commodity">
             <img src="<%=basePath%>img/commodity.png"/>
-            <em>电器日用</em>
+            <em>日用家居</em>
         </a>
     </li>
     <li ng-class="{true: 'active'}[isBook]">
@@ -321,25 +321,25 @@
     <li ng-class="{true: 'active'}[isMakeup]">
         <a href="<%=basePath%>goods/catelog/5" class="makeup">
             <img src="<%=basePath%>img/makeup.png"/>
-            <em>美妆衣物</em>
+            <em>衣物服饰</em>
         </a>
     </li>
     <li ng-class="{true: 'active'}[isSport]">
         <a href="<%=basePath%>goods/catelog/6" class="sport">
             <img src="<%=basePath%>img/sport.png"/>
-            <em>运动棋牌</em>
+            <em>运动户外</em>
         </a>
     </li>
     <li ng-class="{true: 'active'}[isSmallthing]">
         <a href="<%=basePath%>goods/catelog/7" class="smallthing">
             <img src="<%=basePath%>img/smallthing.png"/>
-            <em>票券小物</em>
+            <em>其他</em>
         </a>
     </li>
     <div class="info">
         <a href="#">关于我们</a><em>-</em>
         <a href="#">联系我们</a>
-        <p>©2018 猿来入此校园二手市场</p>
+        <p>©2021 电子科大校园二手市场</p>
     </div>
 </div>
 <!--
@@ -359,11 +359,11 @@
                         <div class="bannerimg">
                             <ul class="bannerul">
                                 <p class="text1">Hello：</p>
-                                <p class="text2">欢迎来到【猿来入此】校园二手市场。临近毕业季的</p>
-                                <p class="text3">你，是否有太多的闲置与校友分享，为了追求更好的校园服</p>
-                                <p class="text4">务，我们打造了一个全新的校园平台——<span>猿来入此校园二手市场</p>
-                                <p class="text5">这里有更多的闲置分享，更自由的校园话题讨论，你想要的，都在这里。</p>
-                                <p class="text6">加入猿来入此校园二手市场，你的大学，应更精彩。</p>
+                                <p class="text2">欢迎来到【电子科大】校园二手市场！</p>
+<%--                                <p class="text3">你是否有太多的闲置与校友分享，为了追求更好的校园服</p>--%>
+<%--                                <p class="text4">务，我们打造了一个全新的校园平台——<span>电子科大校园二手市场</p>--%>
+<%--                                <p class="text5">这里有更多的闲置分享，更自由的校园话题讨论，你想要的，都在这里。</p>--%>
+<%--                                <p class="text6">加入电子科大校园二手市场，你的大学，应更精彩。</p>--%>
                             </ul>
                           <!--   <div class="logoimg">
                                 <img src="../img/p_logo.jpg" />
@@ -396,8 +396,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>猿来入此</p>
-                            <p><c:out value="${item.goods.startTime}"></c:out></p>
+                            <c:out value="${item.goods.startTime}"></c:out>
                         </div>
                     </a>
                 </div>
@@ -426,8 +425,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>猿来入此</p>
-                            <p><c:out value="${item.goods.startTime}"></c:out></p>
+                            <c:out value="${item.goods.startTime}"></c:out>
                         </div>
                     </a>
                 </div>
@@ -456,8 +454,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>猿来入此</p>
-                            <p><c:out value="${item.goods.startTime}"></c:out></p>
+                            <c:out value="${item.goods.startTime}"></c:out>
                         </div>
                     </a>
                 </div>
@@ -465,7 +462,7 @@
         </div>
     </div>
     <div class="index-title">
-        <a href="">电器日用</a>
+        <a href="">日用家居</a>
         <hr class="hr1">
         <hr class="hr2">
     </div>
@@ -482,8 +479,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>猿来入此</p>
-                            <p><c:out value="${item.goods.startTime}"></c:out></p>
+                            <c:out value="${item.goods.startTime}"></c:out>
                         </div>
                     </a>
                 </div>
@@ -508,8 +504,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>猿来入此</p>
-                            <p><c:out value="${item.goods.startTime}"></c:out></p>
+                            <c:out value="${item.goods.startTime}"></c:out>
                         </div>
                     </a>
                 </div>
@@ -517,7 +512,7 @@
         </div>
     </div>
     <div class="index-title">
-        <a href="">美妆衣物</a>
+        <a href="">衣物服饰</a>
         <hr class="hr1">
         <hr class="hr2">
     </div>
@@ -534,8 +529,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>猿来入此</p>
-                            <p><c:out value="${item.goods.startTime}"></c:out></p>
+                            <c:out value="${item.goods.startTime}"></c:out>
                         </div>
                     </a>
                 </div>
@@ -543,7 +537,7 @@
         </div>
     </div>
     <div class="index-title">
-        <a href="">运动棋牌</a>
+        <a href="">运动户外</a>
         <hr class="hr1">
         <hr class="hr2">
     </div>
@@ -560,8 +554,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>猿来入此</p>
-                            <p><c:out value="${item.goods.startTime}"></c:out></p>
+                            <c:out value="${item.goods.startTime}"></c:out>
                         </div>
                     </a>
                 </div>
@@ -569,7 +562,7 @@
         </div>
     </div>
     <div class="index-title">
-        <a href="">票券小物</a>
+        <a href="">其他</a>
         <hr class="hr1">
         <hr class="hr2">
     </div>
@@ -586,8 +579,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>猿来入此</p>
-                            <p><c:out value="${item.goods.startTime}"></c:out></p>
+                            <c:out value="${item.goods.startTime}"></c:out>
                         </div>
                     </a>
                 </div>

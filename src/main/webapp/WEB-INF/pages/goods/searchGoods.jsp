@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>猿来入此校园二手市场</title>
+    <title>电子科大校园二手市场</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/index.css" />
     <script type="text/javascript" src="<%=basePath%>js/jquery.js" ></script>
@@ -54,7 +54,7 @@
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">猿来入此</em>
+                <em class="em1">电子科大</em>
                 <em class="em2">校园二手市场</em>
                 <em class="em3"></em>
             </a>
@@ -245,7 +245,7 @@
     <li ng-class="{true: 'active'}[isCommodity]">
         <a href="<%=basePath%>goods/catelog/3" class="commodity">
             <img src="<%=basePath%>img/commodity.png"/>
-            <em>电器日用</em>
+            <em>日用家居</em>
         </a>
     </li>
     <li ng-class="{true: 'active'}[isBook]">
@@ -257,25 +257,25 @@
     <li ng-class="{true: 'active'}[isMakeup]">
         <a href="<%=basePath%>goods/catelog/5" class="makeup">
             <img src="<%=basePath%>img/makeup.png"/>
-            <em>美妆衣物</em>
+            <em>衣物服饰</em>
         </a>
     </li>
     <li ng-class="{true: 'active'}[isSport]">
         <a href="<%=basePath%>goods/catelog/6" class="sport">
             <img src="<%=basePath%>img/sport.png"/>
-            <em>运动棋牌</em>
+            <em>运动户外</em>
         </a>
     </li>
     <li ng-class="{true: 'active'}[isSmallthing]">
         <a href="<%=basePath%>goods/catelog/7" class="smallthing">
             <img src="<%=basePath%>img/smallthing.png"/>
-            <em>票券小物</em>
+            <em>其他</em>
         </a>
     </li>
     <div class="info">
         <a href="" target="_blank">关于我们</a><em>-</em>
         <a href="">联系我们</a>
-        <p>©2018 PTUACM工作室</p>
+        <p>©2021 PTUACM工作室</p>
     </div>
 </div>
 <!--
@@ -307,7 +307,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>东华大学</p>
+                            <p>电子科大</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>

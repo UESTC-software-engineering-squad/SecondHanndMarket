@@ -58,7 +58,7 @@
                     <img src="">
                 </div>
                 <span class="name">${cur_user.username}</span><hr>
-              <!--   <span class="school">东华大学</span> -->
+              <!--   <span class="school">电子科大</span> -->
                  <a class="btn" style="width: 98%;background-color: rgb(79, 190, 246);color:rgba(255, 255, 255, 1);" href="<%=basePath%>user/myPurse">我的钱包：￥${myPurse.balance}</a>
                 <input type="hidden" value="${myPurse.recharge}" id="recharge"/>
                 <input type="hidden" value="${myPurse.withdrawals}" id="withdrawals"/>
@@ -133,11 +133,11 @@
                         <select class="in_info" name="catelogId">
                             <option value="1">闲置数码</option>
                             <option value="2">校园代步</option>
-                            <option value="3">电器日用</option>
+                            <option value="3">日用家居</option>
                             <option value="4">图书教材</option>
-                            <option value="5">美妆衣物</option>
-                            <option value="6">运动棋牌</option>
-                            <option value="7">票券小物</option>
+                            <option value="5">衣物服饰</option>
+                            <option value="6">运动户外</option>
+                            <option value="7">其他</option>
                         </select>
                     </div>
                     <div class="changeinfo" id="dir">
