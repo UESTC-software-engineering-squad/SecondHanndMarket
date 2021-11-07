@@ -142,10 +142,10 @@
 										 
 										 <c:if test="${myPurse.state==0}">
 										 <c:if test="${myPurse.recharge!=null}">
-										 <a   class="btn btn-danger">【申请提现中】,待管理员审核！</a>
+										 <a   class="btn btn-danger">【申请充值中】,待管理员审核！</a>
 										 </c:if>
 										 <c:if test="${myPurse.withdrawals!=null}">
-										 <a   class="btn btn-danger">【申请充值中】,待管理员审核！</a>
+										 <a   class="btn btn-danger">【申请提现中】,待管理员审核！</a>
 										 </c:if>
 										 </c:if>
 										 

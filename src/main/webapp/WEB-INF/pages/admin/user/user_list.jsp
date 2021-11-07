@@ -65,8 +65,8 @@ table td{
 			 <form class="form-horizontal" id="myserchform" name="myform" action="<%=basePath%>admin/searchUser" method="post">
 				<div class="form-group">
 				<div  class="col-sm-8" style="text-align:center;">
-					<span >手机：</span>
-					<input type="number" placeholder="请输入正确的手机号~" name="phone" value="${searchuser.phone}"/>
+					<span >学号：</span>
+					<input type="number" placeholder="请输入正确的学号~" name="phone" value="${searchuser.phone}"/>
 					<span >昵称：</span>
 					<input type="text" name="username" value="${searchuser.username}"/>
 					<span >QQ：</span>
@@ -85,7 +85,7 @@ table td{
 					<tr>
 						<th><input type="checkbox" id="selectAllButton"></th>
 						<th>ID</th>
-						<th>手机号</th>
+						<th>学号</th>
 						<th>昵称</th>
 						<th>QQ</th>
 						<th>创建时间</th>
@@ -159,7 +159,7 @@ table td{
              <input type="hidden" id="power" name="power" value=""/>
               <input type="hidden" id="goodsNum" name="goodsNum" value=""/>
             	<div class="form-group">
-					 <label class="col-sm-4 control-label" >手机号:</label>
+					 <label class="col-sm-4 control-label" >学号:</label>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" id="my_phone" name="phone" style="margin-top: 8px;"/>
 					</div>
@@ -217,7 +217,7 @@ table td{
             	 <input type="hidden" id="power" name="power" value=""/>
             	  <input type="hidden" id="goodsNum" name="goodsNum" value=""/>
             	<div class="form-group">
-					 <label class="col-sm-4 control-label" >手机号:</label>
+					 <label class="col-sm-4 control-label" >学号:</label>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" id="my_phone" name="phone" readonly style="margin-top: 8px;"/>
 					</div>

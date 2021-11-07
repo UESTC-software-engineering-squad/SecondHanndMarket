@@ -113,7 +113,7 @@
                         <input class="in_info" type="text" name="createAt" value="${cur_user.createAt}" readonly="true"/>
                     </div><hr />
                     <div class="changeinfo">
-                        <span>手机号码：</span>
+                        <span>学号：</span>
                         <input class="in_info" type="text" name="phone" value="${cur_user.phone}" readonly="true"/>
                         <span id="checkphone">已验证</span>
                     </div><hr />

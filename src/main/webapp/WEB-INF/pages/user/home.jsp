@@ -302,7 +302,7 @@
 	          </div>
 	          </div>
 	          <div class="form-group">
-	            <label for="message-text" class="control-label col-sm-2">手机号:</label>
+	            <label for="message-text" class="control-label col-sm-2">学号:</label>
 	            <div class="col-sm-10">
 	            <input type="text" class="form-control" id="message-text" name="phone" readonly/>
 	          </div> 

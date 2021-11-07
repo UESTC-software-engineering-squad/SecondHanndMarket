@@ -52,7 +52,7 @@
 							<h1>个人信息</h1>
 							<ul class="info">
 								
-								<li><span>手机</span> :
+								<li><span>学号</span> :
 									<input type="text" value="${user.phone }" name="phone" 
 									id="phone"> <span id="span" style="color: red;">*</span>
 								</li>

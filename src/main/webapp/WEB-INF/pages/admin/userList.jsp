@@ -50,7 +50,7 @@
 				<thead>
 				<tr>
 					<th data-column-id="id"  data-identifier="true" data-type="numeric">序号</th>
-					<th data-column-id="phone">手机号</th>
+					<th data-column-id="phone">学号</th>
 					<th data-column-id="username">姓名</th>
 					<th data-column-id="qq">QQ</th>
 					<th data-column-id="createAt">开通时间</th>

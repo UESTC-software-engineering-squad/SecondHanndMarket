@@ -36992,7 +36992,7 @@
 	            return;
 	        }
 	        if (!($scope.item.tel || $scope.item.wechat || $scope.item.qq)) {
-	            $rootScope.$broadcast('alert', '手机、微信、QQ至少填写一个');
+	            $rootScope.$broadcast('alert', '学号、微信、QQ至少填写一个');
 	            $scope.publishLoaderIsShow = false;
 	            return;
 	        }
@@ -37113,7 +37113,7 @@
 
 	    $scope.checkTel = function() {
 	        if (!$scope.signupInfo.tel) {
-	            $rootScope.$broadcast('alert', '请填入正确的手机号码！');
+	            $rootScope.$broadcast('alert', '请填入正确的学号！');
 	            return;
 	        }
 
@@ -37135,7 +37135,7 @@
 
 	    $scope.signup = function() {
 	        if (!$scope.signupInfo.tel) {
-	            $rootScope.$broadcast('alert', '请填入正确的手机号码！');
+	            $rootScope.$broadcast('alert', '请填入正确的学号！');
 	            return;
 	        }
 	        if ($scope.signupInfo.password != $scope.signupInfo.password2) {
@@ -37291,13 +37291,13 @@
 
 	    $scope.checkTel = function() {
 	        if (!$scope.tel) {
-	            $rootScope.$broadcast('alert', '请填入正确的手机号码！');
+	            $rootScope.$broadcast('alert', '请填入正确的学号！');
 	            return;
 	        }
 
 	        BaseService.user.requestPasswordReset($scope.tel).then(function(result) {
 	            if (result.data.success) {
-	                $rootScope.$broadcast('alert', '我们向你的手机发送了一条验证短信，请查收~');
+	                $rootScope.$broadcast('alert', '我们向你的学号发送了一条验证短信，请查收~');
 	                $scope.checkTelIsShow = false;
 	                $scope.captchaIsShow = true;
 	            } else {
