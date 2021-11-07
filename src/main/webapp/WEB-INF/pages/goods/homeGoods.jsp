@@ -587,5 +587,21 @@
         </div>
     </div>
 </div>
+<c:if test="${empty cur_user}">
+    <p id="demo"></p>
+    <script>
+        function demo(){
+            if($("#signup-show").css("display")=='block'){
+                $("#signup-show").css("display","none");
+            }
+            if($("#login-show").css("display")=='none'){
+                $("#login-show").css("display","block");
+            }else{
+                $("#login-show").css("display","none");
+            }
+        }
+        document.getElementById("demo").innerHTML = demo();
+    </script>
+</c:if>
 </body>
 </html>
