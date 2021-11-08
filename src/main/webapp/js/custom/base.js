@@ -51,21 +51,24 @@ $(document).ready(function () {
 			alert('请至少选择一项');
 			return;
 		}
-		$.ajax({
-			url:basePath+'/admin/deleteUser',//有弊端，后期完善
-			type:'POST',
-			data:{"ids":idArr},
-			dataType:'json',
-			success:function(json){
-				if(json){
-					alert(json.msg);
-					location.reload();
+		var surechange = confirm("确认删除？");
+		if (surechange==true) {
+			$.ajax({
+				url: basePath + '/admin/deleteUser',//有弊端，后期完善
+				type: 'POST',
+				data: {"ids": idArr},
+				dataType: 'json',
+				success: function (json) {
+					if (json) {
+						alert(json.msg);
+						location.reload();
+					}
+				},
+				error: function () {
+					alert('请求超时或系统出错!');
 				}
-			},
-			error:function(){
-				alert('请求超时或系统出错!');
-			}
-		});
+			});
+		}
 	});
 	
 	
@@ -83,21 +86,25 @@ $(document).ready(function () {
 			alert('请至少选择一项');
 			return;
 		}
-		$.ajax({
-			url:basePath+'/admin/deleteGoods',//有弊端，后期完善
-			type:'POST',
-			data:{"ids":idArr},
-			dataType:'json',
-			success:function(json){
-				if(json){
-					alert(json.msg);
-					location.reload();
+		// var surechange=false;
+		var surechange = confirm("确认删除？");
+		if (surechange===true) {
+			$.ajax({
+				url: basePath + '/admin/deleteGoods',//有弊端，后期完善
+				type: 'POST',
+				data: {"ids": idArr},
+				dataType: 'json',
+				success: function (json) {
+					if (json) {
+						alert(json.msg);
+						location.reload();
+					}
+				},
+				error: function () {
+					alert('请求超时或系统出错!');
 				}
-			},
-			error:function(){
-				alert('请求超时或系统出错!');
-			}
-		});
+			});
+		}
 	});
 	
 	
@@ -115,21 +122,24 @@ $(document).ready(function () {
 			alert('请至少选择一项');
 			return;
 		}
-		$.ajax({
-			url:basePath+'/admin/deleteOrders',//有弊端，后期完善
-			type:'POST',
-			data:{"ids":idArr},
-			dataType:'json',
-			success:function(json){
-				if(json){
-					alert(json.msg);
-					location.reload();
+		var surechange = confirm("确认删除？");
+		if (surechange===true) {
+			$.ajax({
+				url: basePath + '/admin/deleteOrders',//有弊端，后期完善
+				type: 'POST',
+				data: {"ids": idArr},
+				dataType: 'json',
+				success: function (json) {
+					if (json) {
+						alert(json.msg);
+						location.reload();
+					}
+				},
+				error: function () {
+					alert('请求超时或系统出错!');
 				}
-			},
-			error:function(){
-				alert('请求超时或系统出错!');
-			}
-		});
+			});
+		}
 	});
 	
 /*	$("#deletePurseButton").on('click',function(){
