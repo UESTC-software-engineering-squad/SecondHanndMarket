@@ -243,7 +243,7 @@
                     </div>
                     <div class="input-field col s12">
                         <input type="password" name="password" required="required" class="validate ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" />
-                        <label>密码</label>
+                        <label>密码(不为空即可)</label>
                     </div>
                     <div ng-show="checkTelIsShow" class="col s12">
                         <button type="submit" id="register" class="waves-effect waves-light btn verify-btn red lighten-1">
