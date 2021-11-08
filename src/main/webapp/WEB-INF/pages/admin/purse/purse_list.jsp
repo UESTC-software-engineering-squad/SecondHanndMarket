@@ -245,40 +245,46 @@ table td {
 	
 	/* 通过 */
 	function doSavePass(){
-		$.ajax({
-			url:'<%=basePath%>admin/updatePursePass',
-			type:'POST',
-			data:$('#myeditform').serialize(),// 序列化表单值  
-			dataType:'json',
-			success:function(json){
-				alert(json.msg);
-				$('#editModal').modal('toggle');
-				location.reload();
-			},
-			error:function(){
-				alert('请求超时或系统出错!');
-				$('#editModal').modal('toggle');
-			}
-		});
+		var surechange = confirm("确认通过？");
+		if (surechange==true) {
+			$.ajax({
+				url: '<%=basePath%>admin/updatePursePass',
+				type: 'POST',
+				data: $('#myeditform').serialize(),// 序列化表单值
+				dataType: 'json',
+				success: function (json) {
+					alert(json.msg);
+					$('#editModal').modal('toggle');
+					location.reload();
+				},
+				error: function () {
+					alert('请求超时或系统出错!');
+					$('#editModal').modal('toggle');
+				}
+			});
+		}
 	}
 	
 	/* 不通过 */
 	function doSaveRefuse(){
-		$.ajax({
-			url:'<%=basePath%>admin/updatePurseRefuse',
-			type:'POST',
-			data:$('#myeditform').serialize(),// 序列化表单值  
-			dataType:'json',
-			success:function(json){
-				alert(json.msg);
-				$('#editModal').modal('toggle');
-				location.reload();
-			},
-			error:function(){
-				alert('请求超时或系统出错!');
-				$('#editModal').modal('toggle');
-			}
-		});
+		var surechange = confirm("确认拒绝通过？");
+		if (surechange==true) {
+			$.ajax({
+				url: '<%=basePath%>admin/updatePurseRefuse',
+				type: 'POST',
+				data: $('#myeditform').serialize(),// 序列化表单值
+				dataType: 'json',
+				success: function (json) {
+					alert(json.msg);
+					$('#editModal').modal('toggle');
+					location.reload();
+				},
+				error: function () {
+					alert('请求超时或系统出错!');
+					$('#editModal').modal('toggle');
+				}
+			});
+		}
 	}
 	
 	//根据值 动态选中
