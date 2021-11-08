@@ -237,10 +237,13 @@ $(".btn_mypurse").on('click',function(){
 			}else if(reg.test(Recharge)!=true){
 				alert("您输入的金额格式有误，请重新输入！")
 			}else{
-				$(".withdrawals").val("");
-				//提交表单
-		        $("#myUpAndDwon").submit();
-				alert("申请充值成功，等待管理员审核~")
+				var surechange = confirm("确认充值？");
+				if (surechange==1){
+					$(".withdrawals").val("");
+					//提交表单
+					$("#myUpAndDwon").submit();
+					alert("申请充值成功，等待管理员审核~")
+				}
 			}
 			
 		}
@@ -252,11 +255,14 @@ $(".btn_mypurse").on('click',function(){
 				alert("您输入的金额格式有误，请重新输入！")
 			}else if(withdrawals>${myPurse.balance}){
 				alert("您输入的金额太大，请重新输入！")
-			}else{
-			$(".Recharge").val("");
-			//提交表单
-	        $("#myUpAndDwon").submit();
-	        alert("申请提现成功，等待管理员审核~")
+			}else {
+				var surechange = confirm("确认提现？");
+				if (surechange == 1) {
+					$(".Recharge").val("");
+					//提交表单
+					$("#myUpAndDwon").submit();
+					alert("申请提现成功，等待管理员审核~")
+				}
 			}
 		}
 	
