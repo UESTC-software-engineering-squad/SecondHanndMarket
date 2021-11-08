@@ -44,6 +44,9 @@
                 $("#changeName").css("display","none");
             }
         }
+        function showSuccess(){
+            alert("注册成功！");
+        }
     </script>
 <body ng-view="ng-view">
 <!--
@@ -167,7 +170,7 @@
                 <a onclick="showSignup()">
                     <div class="col s12 title"></div>
                 </a>
-                <form:form action="../user/addUser" method="post" commandName="user" role="form">
+                <form:form action="../user/addUser" method="post" commandName="user" role="form" onsubmit="showSuccess()">
                     <div class="input-field col s12">
                         <input type="text" name="username" required="required" class="validate ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-touched" />
                         <label>昵称</label>
