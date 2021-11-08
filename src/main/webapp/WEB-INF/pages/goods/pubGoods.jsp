@@ -45,7 +45,7 @@
     <div id="user_area">
         <div id="home_header">
             <a href="<%=basePath%>goods/homeGoods">
-                <h1 class="logo"></h1>
+                <h1 class="logo">UESTC</h1>
             </a>
             <a href="<%=basePath%>user/home">
                 <img src="<%=basePath%>img/home_header.png"  style="margin-left: 20px;" >

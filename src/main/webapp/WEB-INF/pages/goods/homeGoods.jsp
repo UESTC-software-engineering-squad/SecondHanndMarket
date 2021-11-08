@@ -120,7 +120,7 @@
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">电子科大</em>
+                <em class="em1">UESTC</em>
                 <em class="em2">校园二手市场</em>
                 <em class="em3"></em>
             </a>
@@ -194,7 +194,7 @@
         <div class="publish-box z-depth-4">
             <div class="row">
                 <a onclick="showLogin()">
-                    <div class="col s12 title"></div>
+                    <div class="col s12 title"><img src="<%=basePath%>img/title.png"></div>
                 </a>
                 <form action="<%=basePath%>user/login" method="post" role="form">
                     <div class="input-field col s12">
@@ -229,7 +229,7 @@
         <div class="publish-box z-depth-4">
             <div class="row">
                 <a onclick="showSignup()">
-                    <div class="col s12 title"></div>
+                    <div class="col s12 title"><img src="<%=basePath%>img/title.png"></div>
                 </a>
                 <form action="<%=basePath%>user/addUser" method="POST" role="form" id="signup_form" onsubmit="showSuccess()">
                     <div class="input-field col s12">
@@ -368,9 +368,9 @@
 <%--                                <p class="text5">这里有更多的闲置分享，更自由的校园话题讨论，你想要的，都在这里。</p>--%>
 <%--                                <p class="text6">加入电子科大校园二手市场，你的大学，应更精彩。</p>--%>
                             </ul>
-                          <!--   <div class="logoimg">
+                             <div class="logoimg">
                                 <img src="../img/p_logo.jpg" />
-                            </div> -->
+                             </div>
                         </div>
                     </a>
                 </li>

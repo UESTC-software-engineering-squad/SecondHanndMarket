@@ -75,7 +75,7 @@
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">电子科大</em>
+                <em class="em1">UESTC</em>
                 <em class="em2">校园二手市场</em>
                 <em class="em3"></em>
             </a>
@@ -154,7 +154,7 @@
         <div class="publish-box z-depth-4">
             <div class="row">
                 <a onclick="showLogin()">
-                    <div class="col s12 title"></div>
+                    <div class="col s12 title"><img src="<%=basePath%>img/title.png"></div>
                 </a>
                 <form action="<%=basePath%>user/login" method="post" commandName="user" role="form">
                     <div class="input-field col s12">
@@ -189,7 +189,7 @@
         <div class="publish-box z-depth-4">
             <div class="row">
                 <a onclick="showSignup()">
-                    <div class="col s12 title"></div>
+                    <div class="col s12 title"><img src="<%=basePath%>img/title.png"></div>
                 </a>
                 <form:form action="../../user/addUser" method="post" commandName="user" role="form" onsubmit="showSuccess()">
                     <div class="input-field col s12">
@@ -297,7 +297,7 @@
                 </div>
                 <div>
                     <div class="base-blue z-depth-1 attr">
-                        <i class="iconfont"></i>
+<%--                        <i class="iconfont"></i>--%>
                     </div>
                     <div class="value">${seller.phone}</div>
                 </div>
