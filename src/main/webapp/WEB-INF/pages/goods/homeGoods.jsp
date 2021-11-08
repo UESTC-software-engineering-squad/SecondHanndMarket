@@ -45,6 +45,9 @@
                 $("#changeName").css("display","none");
             }
         }
+        function showSuccess(){
+            alert("注册成功！");
+        }
         
         $(document).ready(function(){
             //异步验证
@@ -228,7 +231,7 @@
                 <a onclick="showSignup()">
                     <div class="col s12 title"></div>
                 </a>
-                <form action="<%=basePath%>user/addUser" method="POST" role="form" id="signup_form">
+                <form action="<%=basePath%>user/addUser" method="POST" role="form" id="signup_form" onsubmit="showSuccess()">
                     <div class="input-field col s12">
                         <input type="text" name="username" required="required" class="validate ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-touched" />
                         <label>昵称</label>
