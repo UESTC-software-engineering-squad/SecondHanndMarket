@@ -180,7 +180,7 @@
     line-height: 30px;
     margin: 20px 0 0 0;
     float: left;
-    color: #000000;
+    color: #ffffff;
     font-size: 20px;
 }
 .text2 {
@@ -209,7 +209,7 @@
     -o-transform: translate(60px);
     -ms-transform: translate(60px);
     transform: translate(60px);
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8), 2px 2px 3px rgba(180, 151, 151, 0.3);//������Ӱ
+    text-shadow: 1px 1px 0 rgb(0 0 0 / 80%), 2px 2px 3px rgb(180 151 151 / 30%);
 }
 .bannerul p:nth-child(1) {
     -webkit-animation: animations 2s ease-out 1s backwards;

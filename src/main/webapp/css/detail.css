@@ -150,7 +150,7 @@ table.bordered>tbody>tr, table.bordered>thead>tr, thead {
 }
 
 .red.lighten-1 {
-	background-color: #EF5350 !important
+	background-color: #4e69eb !important
 }
 
 .red-text.text-lighten-1 {
@@ -2965,8 +2965,18 @@ nav ul a span.badge {
 	animation-delay: 1.15s
 }
 
-@
--webkit-keyframes indeterminate { 0%{
+@-webkit-keyframes indeterminate { 0%{
+	left: -35%;
+	right: 100%
+}
+
+100%,60% {
+
+	left: 100%;
+	right: -90%
+}
+}
+@-moz-keyframes indeterminate { 0%{
 	left: -35%;
 	right: 100%
 }
@@ -2979,8 +2989,7 @@ left
 -90%
 }
 }
-@
--moz-keyframes indeterminate { 0%{
+@keyframes indeterminate { 0%{
 	left: -35%;
 	right: 100%
 }
@@ -2993,22 +3002,7 @@ left
 -90%
 }
 }
-@
-keyframes indeterminate { 0%{
-	left: -35%;
-	right: 100%
-}
-
-100%,60%{
-left
-:
-100%;right
-:
--90%
-}
-}
-@
--webkit-keyframes indeterminate-short { 0%{
+@-webkit-keyframes indeterminate-short { 0%{
 	left: -200%;
 	right: 100%
 }
@@ -3021,8 +3015,7 @@ left
 -8%
 }
 }
-@
--moz-keyframes indeterminate-short { 0%{
+@-moz-keyframes indeterminate-short { 0%{
 	left: -200%;
 	right: 100%
 }
@@ -3035,8 +3028,7 @@ left
 -8%
 }
 }
-@
-keyframes indeterminate-short { 0%{
+@keyframes indeterminate-short { 0%{
 	left: -200%;
 	right: 100%
 }
@@ -7766,7 +7758,7 @@ strong {
 
 .btn, .btn-large {
 	color: #fff;
-	background-color: #0bb9f8;
+	background-color: #4e69eb;
 	letter-spacing: .5px;
 	-webkit-transition: .2s ease-out;
 	-moz-transition: .2s ease-out;
@@ -10962,7 +10954,7 @@ div.change-name.stark-components .publish-box .publish-btn:hover {
 }
 
 .header.stark-components .search-bar .iconfont {
-	color: #9AFF9A;
+	color: #4e69eb;
 	display: inline-block;
 	cursor: pointer
 }
@@ -10981,7 +10973,7 @@ div.change-name.stark-components .publish-box .publish-btn:hover {
 }
 
 .header.stark-components .logo .em1 {
-	color: #0bb9f8
+	color: #4e69eb
 }
 
 .header.stark-components .logo .em3 {
