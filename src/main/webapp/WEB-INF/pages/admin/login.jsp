@@ -56,14 +56,14 @@
         	phone: "required",
             password: {
                 required: true,
-                minlength: 6
+                minlength: 1
             },
         },
         messages: {
         	phone:  "请输入用户名",
             password: {
                 required: "请输入密码",
-                minlength: jQuery.format("密码不能小于{0}个字符")
+                // minlength: jQuery.format("密码不能小于{0}个字符")
             }
         }
     });

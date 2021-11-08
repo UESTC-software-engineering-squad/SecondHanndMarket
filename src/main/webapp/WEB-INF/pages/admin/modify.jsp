@@ -18,6 +18,17 @@
 <!-- JavaScript includes - jQuery, the complexify plugin and our own script.js -->
 <script src="<%=basePath%>js/jquery.min.js"></script>
 <script src="<%=basePath%>js/jquery.md5.js"></script>
+<script>
+	function sumbit_sure(){
+		var gnl=confirm("确定提交?");
+		if (gnl==true){
+			return true;
+		}else{
+			return false;
+		}
+	}
+</script>
+
 </head>
 
 <body>
@@ -35,7 +46,7 @@
 		<!--End-breadcrumbs-->
 
 		<div id="main">
-			<form class="" method="post" action="<%=basePath%>admin/changePassword">
+			<form class="" method="post" action="<%=basePath%>admin/changePassword" onsubmit="return sumbit_sure()">
 			
 				<input type="hidden" value='${admin.id }' id="id" name="id"/>
 				<div class="row pass">
