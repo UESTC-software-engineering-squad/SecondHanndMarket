@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="<%=basePath%>css/userhome.css" />
     <link rel="stylesheet" href="<%=basePath%>css/user.css" />
     <script type="text/javascript" src="<%=basePath%>js/jquery-3.1.1.min.js"></script>
-   <!-- bootstrap -->
+    <!-- bootstrap -->
     <link rel="stylesheet" href="<%=basePath%>css/bootstrap.min.css" />
     <script type="text/javascript" src="<%=basePath%>js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="<%=basePath%>js/bootstrap.min.js"></script>
@@ -23,7 +23,16 @@
     <link rel="stylesheet" href="<%=basePath%>css/fileinput.min.css">
     <script type="text/javascript" src="<%=basePath%>js/fileinput.min.js"></script>
     <script type="text/javascript" src="<%=basePath%>js/zh.js"></script>
-
+    <script>
+        function sumbit_sure(){
+            var gnl=confirm("确定发布?");
+            if (gnl==true){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
     <style>
         .container{padding-top:10px}
     </style>
@@ -39,7 +48,7 @@
                 <h1 class="logo"></h1>
             </a>
             <a href="<%=basePath%>user/home">
-                 <img src="<%=basePath%>img/home_header.png"  style="margin-left: 20px;" >
+                <img src="<%=basePath%>img/home_header.png"  style="margin-left: 20px;" >
             </a>
             <a href="<%=basePath%>user/home">
                 <div class="home"></div>
@@ -58,12 +67,12 @@
                     <img src="">
                 </div>
                 <span class="name">${cur_user.username}</span><hr>
-              <!--   <span class="school">电子科大</span> -->
-                 <a class="btn" style="width: 98%;background-color: rgb(79, 190, 246);color:rgba(255, 255, 255, 1);" href="<%=basePath%>user/myPurse">我的钱包：￥${myPurse.balance}</a>
+                <!--   <span class="school">电子科大</span> -->
+                <a class="btn" style="width: 98%;background-color: rgb(79, 190, 246);color:rgba(255, 255, 255, 1);" href="<%=basePath%>user/myPurse">我的钱包：￥${myPurse.balance}</a>
                 <input type="hidden" value="${myPurse.recharge}" id="recharge"/>
                 <input type="hidden" value="${myPurse.withdrawals}" id="withdrawals"/>
-               <span class="btn" data-toggle="modal" data-target="#myModal" style="width: 98%;background-color: rgb(79, 190, 246); color:rgba(255, 255, 255, 1);margin-top:0.5cm;">我的信用积分：${cur_user.power}</span>
-                
+                <span class="btn" data-toggle="modal" data-target="#myModal" style="width: 98%;background-color: rgb(79, 190, 246); color:rgba(255, 255, 255, 1);margin-top:0.5cm;">我的信用积分：${cur_user.power}</span>
+
             </div>
             <div class="home_nav">
                 <ul>
@@ -111,7 +120,7 @@
         -->
         <div id="user_content">
             <div class="basic">
-                <form:form action="../goods/publishGoodsSubmit" method="post" role="form" enctype="multipart/form-data">
+                <form:form action="../goods/publishGoodsSubmit" method="post" role="form" enctype="multipart/form-data" onsubmit="return sumbit_sure()">
                     <h1 style="margin-left: 210px;">发布物品</h1><hr />
                     <div class="changeinfo">
                         <span>物品名：</span>
